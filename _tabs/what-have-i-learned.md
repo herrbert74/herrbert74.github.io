@@ -2,6 +2,8 @@
 layout: page
 title: What have I learned?
 permalink: /what-have-i-learned/
+icon: fas fa-leaf
+order: 8
 ---
 
 ## 2024
@@ -10,12 +12,12 @@ permalink: /what-have-i-learned/
 * Github Pages + Jekyll static website generator
 
 ### January
-* Using IntelliJ Platform SDK with StringTemplate, JFlex, and Grammar-Kit/EBNF to write a custom language support plugin
+* Using IntelliJ Platform SDK with StringTemplate, JFlex, and Grammar-Kit/EBNF to write a custom language support plugin for templating with StringTemplate over Kotlin
 
 ## 2023
 
 ### December
-* Kotlin Coroutines Part 2
+* Kotlin Coroutines book - Part 2
 * Improved Compose performance
 
 ### October, November

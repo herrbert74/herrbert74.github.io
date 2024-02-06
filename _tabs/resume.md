@@ -2,6 +2,9 @@
 layout: page
 title: Resume
 permalink: /resume/
+# the default layout is 'page'
+icon: fas fa-film
+order: 6
 ---
 
 <br>
@@ -27,6 +30,7 @@ Tech used recently: Kotlin, MVI, Coroutines, SOLID, Dagger/Hilt, RetroFit, Jetpa
 <br>
 ## Experiences
 
+![daily-mirror](/assets/img/resume/daily-mirror.png){: width="167" height="62" .left }
 ### Reach plc, London
 #### Senior Android developer, February 2021 – January 2024
 
@@ -47,6 +51,7 @@ Tech used recently: Kotlin, MVI, Coroutines, SOLID, Dagger/Hilt, RetroFit, Jetpa
   * As usual, I cleaned up the code regularly: I removed duplications, unused code and resources, removed Lint and build warnings, fixed style warnings. The code went up from 80k Lines Of Code to 100k LOC during my tenure, but my estimate is that it would be at around 180k without my work, making it significantly costlier to maintain.
 * Agile environment: open ended sprints, code reviews, sprint planning, retrospectives
 
+![mkodo](/assets/img/resume/mkodo.png){: width="160" .left }
 ### Mkodo, London
 #### Android developer (contract), June 2020 – November 2020
 
@@ -62,6 +67,7 @@ Tech used recently: Kotlin, MVI, Coroutines, SOLID, Dagger/Hilt, RetroFit, Jetpa
   * Review the app from an architectural and broader code quality point of view.
 * Agile environment: two weeks sprints, code reviews, sprint planning, retrospectives
 
+![openpayd](/assets/img/resume/openpayd.png){: width="250" .left}
 ### OpenPayd, London
 #### Senior Android developer, July 2019 – April 2020
 
@@ -78,6 +84,7 @@ Tech used recently: Kotlin, MVI, Coroutines, SOLID, Dagger/Hilt, RetroFit, Jetpa
   * Add Detekt for static code analysis.
 * Agile environment: kanban, code reviews, sprint planning, retrospectives
 
+![medshr](/assets/img/resume/medshr.png){: width="60" .left }
 ### MedShr Ltd., London
 #### Android developer, March 2017 – June 2019
 
@@ -94,6 +101,7 @@ Tech used recently: Kotlin, MVI, Coroutines, SOLID, Dagger/Hilt, RetroFit, Jetpa
 * Agile environment: kanban, code reviews, sprint planning, retrospectives.
 * Other technologies used: RxJava, Retrofit, Dagger, PubNub, Google Auth, Crashlytics, Google Maps API, Google Analytics, Firebase Messaging
 
+![iedigital](/assets/img/resume/iedigital.png){: width="180" .left }
 ### Intelligent Environments (ieDigital), Kingston upon Thames
 #### Android developer, May 2013 - March 2017
 
@@ -116,6 +124,7 @@ Tech used recently: Kotlin, MVI, Coroutines, SOLID, Dagger/Hilt, RetroFit, Jetpa
 * App links: I’m afraid the links to Google Play are not relevant anymore.
 * Other technologies used: RoboGuice, TeamCity, Artifactory, Crashlytics, Google Maps API, Google Analytics, GCM Messaging
 
+![szintezis-net](/assets/img/resume/szintezis-net.png){: width="70" .left }
 ### Synthesis-NET LLC, Győr, Hungary
 #### Android developer, November 2011 - April 2013
 

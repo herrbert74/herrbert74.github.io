@@ -2,6 +2,8 @@
 layout: page
 title: Portfolio
 permalink: /portfolio/
+icon: fas fa-book
+order: 7
 ---
 
 My portfolio is distributed across multiple providers and accounts.

@@ -4,6 +4,10 @@ title:  Starting a new personal blog
 date:   2024-02-05 10:51:21 +0000
 categories: android
 ---
+
+
+![starting-image](/assets/img/posts/20240205.jpg){: width="512" height="512" }
+
 I was laid off recently, and I thought it might be a good idea to finally start a personal blog.
 
 I planned this for a long time now.
