@@ -259,8 +259,8 @@ I have an account on Bitbucket with more than 50, mostly private git repositorie
 * Hobbies: Running, Hiking, Cycling, Geocaching, Films, Map Editing (OpenStreetMap), Quizzing
 
 [Bitbucket]: https://bitbucket.org/babestudios/workspace/repositories/
-[StackOverflow]: http://stackoverflow.com/users/1067763/herrbert74
-[LinkedIn]: http://www.linkedin.com/pub/zsolt-bertalan/4a/b1/b11
+[StackOverflow]: https://stackoverflow.com/users/1067763/herrbert74
+[LinkedIn]: https://www.linkedin.com/pub/zsolt-bertalan/4a/b1/b11
 [Google Play]: https://play.google.com/store/apps/developer?id=BaBe+Studios
 [MedShr]: https://play.google.com/store/apps/details?id=net.medshr.android
 [IE Emoji app]: https://www.bbc.co.uk/news/technology-33063344
