@@ -8,6 +8,14 @@ order: 8
 
 ## 2024
 
+### April
+* Switching back to MVVM for test challenges
+* Kotlin Coroutines book - Part 3 (Flows)
+
+### March
+* HackerRank easy challenges
+* Kotlin Coroutines book - Part 2 remaining sections
+
 ### February
 * Github Pages + Jekyll static website generator
 
