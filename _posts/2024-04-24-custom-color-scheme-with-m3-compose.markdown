@@ -196,7 +196,7 @@ With this in mind, we declare FixedColorScheme as above, but instead of adding n
         tertiaryFixedDim = tertiaryDark
     )
 
-    val LocalFixedAccentColors = staticCompositionLocalOf { getFixedAccentColors() }
+    val LocalFixedColors = staticCompositionLocalOf { getFixedColors() }
 
 ```
 {: file='design/Color.kt'}
@@ -209,7 +209,7 @@ And finally, we add them to the previously declared ProvideColors composable:
     fun ProvideColors(
         colorScheme: ColorScheme,
         additionalColorScheme: AdditionalColorScheme,
-        fixedColorScheme: FixedColorScheme = LocalFixedColors.current,
+        fixedColorScheme: FixedColorScheme = LocalColors.current,
         content: @Composable () -> Unit,
     ) {
         val colorCache = remember { colorScheme }
