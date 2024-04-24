@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Custom colour scheme with Material3 Compose"
-date:   2024-04-24 16:10:00 +0000
+date:   2024-04-24 15:10:00 +0000
 categories: android compose material-design
 ---
 
