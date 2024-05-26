@@ -8,9 +8,14 @@ order: 8
 
 ## 2024
 
+### May
+* Caching strategies
+* Kotlin Coroutines book - Part 3 (Flows)
+* Soft Skills: The Software Developer's Life Manual (Book by John Sonmez)
+
 ### April
 * Switching back to MVVM for test challenges
-* Kotlin Coroutines book - Part 3 (Flows)
+* MAterial 3 Compose design system
 
 ### March
 * HackerRank easy challenges
