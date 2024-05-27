@@ -15,13 +15,13 @@ Most of the projects are private, but some of them are open source.
 
 ### Companies House
 
-my main project to try new language features
+My main project to try new language features.
 
 [https://bitbucket.org/babestudios/companies-house][companies-house]
 
 ### BaBeStudiosBase
 
-a library split into four parts, allowing code reuse across projects
+A library split into four parts, allowing code reuse across projects.
 
 [https://bitbucket.org/babestudios/babestudiosbase][BaBeStudiosBase]
 
@@ -31,7 +31,7 @@ An older account, holding some of my older projects and job search test assignme
 
 ### Crypto Sitter
 
-helps me to check on my crypto holdings
+Helps me to check on my crypto holdings.
 
 [https://bitbucket.org/herrbert74/cryptositter][CryptoSitter]
 
@@ -41,13 +41,13 @@ Some of my older projects and newer job search test assignments. Also hosts my p
 
 ### FlickSlate
 
-My newest project to test pure Android features (as opposed to Compnies House, which is Kotlin Multiplatform now), mainly Compose nad MVVM at the beginning.
+My newest project to test pure Android features (as opposed to Compnies House, which is Kotlin Multiplatform now), mainly Compose and MVVM at the beginning.
 
 [https://github.com/herrbert74/FlickSlate][FlickSlate]
 
 ### KotlinCoroutinesPlayground
 
-Project to test out chapters in the book Kotlin Coroutines by Marcin Moskala
+Project to test out chapters in the book Kotlin Coroutines by Marcin Moskala.
 
 [https://github.com/herrbert74/KotlinCoroutinesPlayground][KotlinCoroutinesPlayground]
 
