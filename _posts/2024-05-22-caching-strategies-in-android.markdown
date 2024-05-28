@@ -8,6 +8,8 @@ mermaid: true
 
 ![starting-image](/assets/img/posts/20240521.jpg){: width="512" height="512" }
 
+<a href="https://androidweekly.net/issues/issue-624"><img alt="Featured in Android Weekly Issue 624" src="/assets/img/posts/20240521_badge.svg" width="252" height="20"></a>
+
 Recently, I came across a few challenges that involved caching. In everything I do, I strive to understand as much of it as possible. What type of caching is available? How should I decide on strategies? I found information on the technical part, but I couldn't find Android-related instructions. I also ran across a few interesting tidbits that I would like to share.
 
 ## Caching types
