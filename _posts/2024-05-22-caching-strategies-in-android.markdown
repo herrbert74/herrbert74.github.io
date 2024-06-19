@@ -10,6 +10,8 @@ mermaid: true
 
 <a href="https://androidweekly.net/issues/issue-624"><img alt="Featured in Android Weekly Issue 624" src="/assets/img/posts/20240521_badge.svg" width="252" height="20"></a>
 
+*Update: Added stale-if-error and update-while-navigate and corrected stale-while-revalidate*
+
 Recently, I came across a few challenges that involved caching. In everything I do, I strive to understand as much of it as possible. What type of caching is available? How should I decide on strategies? I found information on the technical part, but I couldn't find Android-related instructions. I also ran across a few interesting tidbits that I would like to share.
 
 ## Caching types
@@ -50,9 +52,9 @@ sequenceDiagram
     Network->>Repo: Success
 ```
 
-### Network First
+### Network First (aka stale-if-error)
 
-We make a network request first, and only in case the network fails we go to the cache.
+We make a network request first, and only in case the network fails we go to the cache. Similar to [HTTP RFC 5861 stale-if-error][rfc5861].
 
 ```mermaid
 sequenceDiagram
@@ -75,11 +77,13 @@ sequenceDiagram
     end
 ```
 
-### Cache First - Network Second
+### Cache First - Network Second (aka stale-while-invalidate)
 
 For the Cache First strategies I try to highlight the differences between them.
 
 For Cache First - Network Second, we go to the cache first, emit it, then we ***always*** do a network request, and if there is new data, we save and ***emit*** it.
+
+Similar to [HTTP RFC 5861 stale-while-invalidate][rfc5861].
 
 Most commonly used variant, in my opinion.
 
@@ -112,7 +116,7 @@ sequenceDiagram
     end
 ```
 
-### Cache First - Network for Later (aka Stale while invalidate)
+### Cache First - Network for Later (aka update-while-navigate)
 
 Like before, we emit cache and ***always*** do network request, but we ***do not emit*** result, only save it.
 
@@ -283,6 +287,7 @@ That was a pleasureful journey for me, and I hope you enjoyed it as well, dear r
 [caching-strategies]: https://borstch.com/blog/caching-strategies-in-pwa-cache-first-network-first-stale-while-revalidate-etc
 [mastering-caching-strategies]: https://thinhdanggroup.github.io/caching-stategies/
 [universal-caching]: https://medium.com/@andrei_r/easy-caching-android-kotlin-flow-b824a29e8a77
+[rfc5861]: https://datatracker.ietf.org/doc/html/rfc5861
 [networkBoundResource]: https://blog.devgenius.io/android-networking-and-database-caching-in-2020-mvvm-retrofit-room-flow-35b4f897d46a
 [kotlin result]: https://github.com/michaelbull/kotlin-result
 [getresult]: https://github.com/herrbert74/FlickSlate/tree/main/app/src/main/java/com/zsoltbertalan/flickslate/util/getresult
