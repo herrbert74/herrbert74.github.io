@@ -10,7 +10,9 @@ mermaid: true
 
 <a href="https://androidweekly.net/issues/issue-624"><img alt="Featured in Android Weekly Issue 624" src="/assets/img/posts/20240521_badge.svg" width="252" height="20"></a>
 
-*Update: Added stale-if-error and update-while-navigate and corrected stale-while-revalidate*
+*Update 1: Added stale-if-error and update-while-navigate and corrected stale-while-revalidate*
+
+*Update 2: Added warning about runCatching*
 
 Recently, I came across a few challenges that involved caching. In everything I do, I strive to understand as much of it as possible. What type of caching is available? How should I decide on strategies? I found information on the technical part, but I couldn't find Android-related instructions. I also ran across a few interesting tidbits that I would like to share.
 
@@ -207,7 +209,7 @@ There are other terms we could reserve for other purposes, like **Hit** for cach
 
 ## My take on the generic functions
 
-Another problem with the Flower library above is that it hardcodes the strategy, or, to put it another way, it doesn't provide solutions for all the strategies I outlined above. Indeed, you do not need generic functions for the network only and for the cache only strategies, but I would like to use something for the cache first strategies. For this reason, I created two files: ***fetchNetworkFirst*** for the case covered by Flower, and ***fetchCacheThenNetwork*** for the *'Cache First'* cases. The reason we can cover all three cases in the latter is that they differ only in minor details, so we can introduce the strategies as parameters. 
+Another problem with the Flower library above is that it hardcodes the strategy, or, to put it another way, it doesn't provide solutions for all the strategies I outlined above. Indeed, you do not need generic functions for the network only and for the cache only strategies, but I would like to use something for the cache first strategies. For this reason, I created two files: ***fetchNetworkFirst*** for the case covered by Flower, and ***fetchCacheThenNetwork*** for the *'Cache First'* cases. The reason we can cover all three cases in the latter is that they differ only in minor details, so we can introduce the strategies as parameters.
 
 All right, it's time to see some code. The rest you can check out [here] [getresult]. You can also have a look at the tests I wrote for these functions [here] [getresult-test].
 
@@ -270,6 +272,9 @@ The ***fetchFromLocal*** function is accessing the cache. It will return a domai
 The ***makeNetworkRequest*** function will return a REMOTE object because the Retrofit interface won't do the mapping for me. Hence we need the ***mapper*** function, which, for me, is always an extension on the REMOTE class. Earlier versions of this did not have the mapper but saved and loaded data in the database, which also executed the mapping part. I decided to explicitly add the mapper here to avoid relying on the database, having single responsibility, and because I might want to do the database save in a different thread, so I wouldn't wait for the result.
 
 Note that ***apiRunCatching*** is just my extension over ***runCatching*** to avoid import clashes with the Kotlin standard library and make the code more readable. I also use a typealias (***ApiResult***) for ***Result*** for the same reason.
+
+> Use runCatching very carefully. It catches everything, including CancellationException and Error, which is a mistake. You need to rethrow these, or make other adjustments. I will write another article about error handling.<br>
+{: .prompt-danger }
 
 The ***saveResponseData*** part will save the data and pass the REMOTE object as an unchanged Result. The mapper will map it to a DOMAIN object, after which the recoverIf function will map the error to a null Result if we have local data already. All these are done with the help of kotlin-result extension functions.
 
