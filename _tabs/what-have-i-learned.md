@@ -8,6 +8,10 @@ order: 8
 
 ## 2024
 
+### June
+* Architecture related decisions in Android
+* Kotlin Coroutines book - Part 4 (Examples, Best practices)
+
 ### May
 * Caching strategies
 * Kotlin Coroutines book - Part 3 (Flows)
