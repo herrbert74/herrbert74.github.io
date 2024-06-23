@@ -14,6 +14,8 @@ mermaid: true
 
 *Update 2: Added warning about runCatching*
 
+*Update 3: Added Cache First - Network Parallel strategy*
+
 Recently, I came across a few challenges that involved caching. In everything I do, I strive to understand as much of it as possible. What type of caching is available? How should I decide on strategies? I found information on the technical part, but I couldn't find Android-related instructions. I also ran across a few interesting tidbits that I would like to share.
 
 ## Caching types
@@ -41,7 +43,8 @@ The most basic strategy, which I just mention for completeness. Use this when yo
 ```mermaid
 sequenceDiagram
     Repo->>Cache: Request
-    Cache->>Repo: Success
+    Cache-->>Repo: Success
+    Cache--XRepo: Failure
 ```
 
 ### Network Only
@@ -51,7 +54,8 @@ The other basic strategy, more often used for MVPs, when you quickly want to bui
 ```mermaid
 sequenceDiagram
     Repo->>Network: Request
-    Network->>Repo: Success
+    Network-->>Repo: Success
+    Network--XRepo: Failure
 ```
 
 ### Network First (aka stale-if-error)
@@ -63,18 +67,18 @@ sequenceDiagram
     participant UI
     Repo->>Network: Request
     alt
-    Network->>Repo: Success
-    Repo->>UI: Emit
+    Network-->>Repo: Success
+    Repo-->>UI: Emit
     Repo->>Cache: Save
     else
-    Network-XRepo: Failure
+    Network--XRepo: Failure
     Repo->>Cache: Request
     alt
-    Cache->>Repo: Success
-    Repo->>UI: Emit
+    Cache-->>Repo: Success
+    Repo-->>UI: Emit
     else
-    Cache-XRepo: Failure
-    Repo->>UI: Emit error
+    Cache--XRepo: Failure
+    Repo-->>UI: Emit error
     end
     end
 ```
@@ -94,27 +98,77 @@ sequenceDiagram
     participant UI
     Repo->>Cache: Request
     alt
-    Cache->>Repo: Success
-    Repo->>UI: Emit
+        Cache-->>Repo: Success
+        Repo-->>UI: Emit
     else
-    Cache->>Repo: Failure
+        Cache-->>Repo: Failure
     end
     rect rgb(250, 223, 220)
-    Repo->>Network: Request always
+        Repo->>Network: Request always
     end
     alt
-    Network->>Repo: Success
-    rect rgb(250, 223, 220)
-    Repo->>UI: Emit
-    end
-    Repo->>Cache: Save
+        Network-->>Repo: Success
+        rect rgb(250, 223, 220)
+            Repo-->>UI: Emit
+        end
+        Repo->>Cache: Save
     else
-    Network-XRepo: Failure
-    rect rgb(250, 223, 220)
-    opt cache failed too
-    Repo->>UI: Emit error
+        Network--XRepo: Failure
+        rect rgb(250, 223, 220)
+            opt cache failed too
+                Repo-->>UI: Emit error
+            end
+        end
     end
-    end
+```
+
+### Cache First - Network Parallel
+
+We **always** make a network request, but at the same time we **start listening** to cache changes with an **initial emission**. We **only save** the network result into the cache, not delivering it directly to the UI.
+
+It is very similar to Cache First - Network Second, but here the cache is treated as the single source of truth. Technically, this is not even Cache First, but effectively, the cache result—if there is any—is always delivered first.
+
+I use this approach only when multiple requests to the network are expected or when there are multiple contributors to the cache.
+
+```mermaid
+sequenceDiagram
+    participant UI
+    
+    par Listen to Flow
+        rect rgb(250, 223, 220)
+            Repo->>Cache : Start listening
+        end
+        activate Cache
+        alt Cache Success
+            rect rgb(250, 223, 220)
+                Cache-->>Repo: Initial Emission
+            end
+            Repo-->>UI: Emit
+        else Cache Failure
+            Cache--XRepo: Failure
+        end
+    and Request
+        rect rgb(250, 223, 220)
+            Repo->>Network : Request always
+        end
+        activate Network
+        alt Network Success
+            Network-->>Repo: Success
+            deactivate Network
+            rect rgb(250, 223, 220)
+                Repo->>Cache: Save
+                Cache-->>Repo: Emission on separate function
+            end
+            deactivate Cache
+            Repo-->>UI: Emit
+        else Network Failure
+            Network--XRepo: Failure
+            rect rgb(250, 223, 220)
+                opt cache failed too
+                    Repo-->>UI: Emit error
+                end
+            end
+        end
     end
 ```
 
@@ -129,22 +183,22 @@ sequenceDiagram
     participant UI
     Repo->>Cache: Request
     alt
-    Cache->>Repo: Success
-    Repo->>UI: Emit
+    Cache-->>Repo: Success
+    Repo-->>UI: Emit
     else
-    Cache->>Repo: Failure
+    Cache-->>Repo: Failure
     end
     rect rgb(250, 223, 220)
     Repo->>Network: Request always
     end
     alt
-    Network->>Repo: Success
+    Network-->>Repo: Success
     Repo->>Cache: Save
     else
-    Network-XRepo: Failure
+    Network--XRepo: Failure
     rect rgb(250, 223, 220)
     opt cache failed too
-    Repo->>UI: Emit error
+    Repo-->>UI: Emit error
     end
     end
     end
@@ -163,23 +217,23 @@ sequenceDiagram
     participant UI
     Repo->>Cache: Request
     alt
-    Cache->>Repo: Success
-    Repo->>UI: Emit
+    Cache-->>Repo: Success
+    Repo-->>UI: Emit
     else
-    Cache->>Repo: Failure
+    Cache--XRepo: Failure
     rect rgb(250, 223, 220)
     Repo->>Network: Request on failure
     end
     alt
-    Network->>Repo: Success
+    Network-->>Repo: Success
     Repo->>Cache: Save
     rect rgb(250, 223, 220)
-    Repo->>UI: Emit
+    Repo-->>UI: Emit
     end
     else
-    Network-XRepo: Failure
+    Network--XRepo: Failure
     rect rgb(250, 223, 220)
-    Repo->>UI: Emit error
+    Repo-->>UI: Emit error
     end
     end
     end
