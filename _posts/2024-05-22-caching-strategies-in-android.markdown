@@ -16,6 +16,8 @@ mermaid: true
 
 *Update 3: Added Cache First - Network Parallel strategy*
 
+*Update 4: Added a remark on handling multiple loading states with sealed classes*
+
 Recently, I came across a few challenges that involved caching. In everything I do, I strive to understand as much of it as possible. What type of caching is available? How should I decide on strategies? I found information on the technical part, but I couldn't find Android-related instructions. I also ran across a few interesting tidbits that I would like to share.
 
 ## Caching types
@@ -253,7 +255,9 @@ By nature, it's an opinionated function, and it doesn't work for me out of the b
 
 Let's define a few terms before we delve into the details, so you understand my opinionated solution and can build your own. Some of this is arbitrarily defined by me; others were defined by the libraries we use.
 
-**Result** classes are monads, usually containing a Success and a Failure part, like in the Kotlin standard library. Some people, like the writer of the above library, prefer to add a Loading state to the mix, but I do not recommend this. The loading state is a presentation layer concern, while the monad should be created in the repository layer. Let's not couple the two more than required. I do not use the standard Result class, however. I use the [kotlin-result][kotlin result] library, which is very similar but contains a lot of useful extensions.
+**Result** classes are monads, usually containing a Success and a Failure part, like in the Kotlin standard library. Some people, like the writer of the above library, prefer to add a Loading state to the mix using a sealed class, but I do not recommend this. The loading state is a presentation layer concern, while the monad should be created in the repository layer. Let's not couple the two more than required. I do not use the standard Result class, however. I use the [kotlin-result][kotlin result] library, which is very similar but contains a lot of useful extensions.
+
+An advantage of using custom sealed classes with a loading state could be the use of multiple loading states. I can imagine a scenario when we wanted to show a full-screen progress bar when there was no result at all, and then show a partial progress bar when the cache data had arrived and we were making a network request. However, this never came up as a requirement in my practice, and there might be other solutions to this problem. I will have this in mind next time this problem comes up.
 
 The **Response** class is a Retrofit class that represents the network response.
 
