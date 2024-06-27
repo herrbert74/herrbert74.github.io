@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Architecture related decisions in Android - Introduction"
-date:   2024-06-01 09:10:00 +0000
+date:   2024-06-27 11:57:00 +0000
 categories: android architecture
 ---
 
-![starting-image](/assets/img/posts/20240601_architecture.jpg){: width="512" height="512" }
+![starting-image](/assets/img/posts/20240627_architecture.jpg){: width="512" height="512" }
 
 Other parts in the series:<br>
 Architecture related decisions in Android - Introduction (this article)<br>
