@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Architecture related decisions in Android - Introduction"
-date:   2024-06-27 11:57:00 +0000
+date:   2024-06-27 10:57:00 +0000
 categories: android architecture
 ---
 
@@ -9,7 +9,7 @@ categories: android architecture
 
 Other parts in the series:<br>
 Architecture related decisions in Android - Introduction (this article)<br>
-*Architecture related decisions in Android - Monads* (coming soon)<br>
+[Architecture related decisions in Android - Error handling and Monads]<br>
 *Architecture related decisions in Android - Mapping* (coming soon)<br>
 *Architecture related decisions in Android - Response and Reply classes* (coming soon)<br>
 *Architecture related decisions in Android - Error handling* (coming soon)<br>
@@ -103,8 +103,7 @@ A word of warning when you choose an architecture for interview take-home test c
 [companies-house]: https://bitbucket.org/babestudios/companies-house
 [clean-architecture-gist]: https://gist.github.com/ygrenzinger/14812a56b9221c9feca0b3621518635b
 [use-cases]: https://medium.com/@VolodymyrSch/the-complexities-of-clean-architecture-use-cases-71ac89ea8b40
-[Architecture related decisions in Android - Monads]: http://localhost:4000/posts/architecture-related-decisions-monads/
+[Architecture related decisions in Android - Error handling and Monads]: https://herrbert74.github.io/posts/posts/architecture-related-decisions-error-handling-and-monads/
 [Architecture related decisions in Android - Mapping]: http://localhost:4000/posts/architecture-related-decisions-mapping/
 [Architecture related decisions in Android - Response and Reply classes]: http://localhost:4000/posts/architecture-related-decisions-response-classes/
-[Architecture related decisions in Android - Error handling]: http://localhost:4000/posts/architecture-related-decisions-error-handling/
 [Architecture related decisions in Android - The rest]: http://localhost:4000/posts/architecture-related-decisions-rest/
