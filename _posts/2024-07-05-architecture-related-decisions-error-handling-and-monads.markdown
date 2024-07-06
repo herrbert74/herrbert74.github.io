@@ -10,9 +10,10 @@ categories: android architecture
 Other parts in the series:<br>
 [Architecture related decisions in Android - Introduction]<br>
 Architecture related decisions in Android - Error handling and Monads (this article)<br>
-[Architecture related decisions in Android - Mapping]<br>
-[Architecture related decisions in Android - Response and Reply classes]<br>
-[Architecture related decisions in Android - The rest]
+*Architecture related decisions in Android - Mapping* (coming soon)<br>
+*Architecture related decisions in Android - Response and Reply classes* (coming soon)<br>
+*Architecture related decisions in Android - The rest* (coming soon)
+
 
 I wrote this article as two separate articles, but it proved impossible to talk about error handling or monads without the other. For me, the two concepts are intertwined. So I will introduce both, tell you how they affect your decisions in the app stack, and finally, how I am thinking about them at the moment.
 

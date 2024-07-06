@@ -12,7 +12,6 @@ Architecture related decisions in Android - Introduction (this article)<br>
 [Architecture related decisions in Android - Error handling and Monads]<br>
 *Architecture related decisions in Android - Mapping* (coming soon)<br>
 *Architecture related decisions in Android - Response and Reply classes* (coming soon)<br>
-*Architecture related decisions in Android - Error handling* (coming soon)<br>
 *Architecture related decisions in Android - The rest* (coming soon)
 
 ## What is architecture?
@@ -24,13 +23,12 @@ When talking about architecture, a lot of Android developers use MV* architectur
 In this article series, I wanted to talk only about smaller decisions as they influence other parts of the architecture, but due to the above reasons, in this introductory article, I will talk about app architecture and presentation layer architecture.
 
 In the rest of the series, I will write about decisions that will influence several parts of the architecture, in particular:
-* Monads
+* Result Monad and Error handling
 * Mapping
 * Response classes
-* Error handling
 * Finally, some smaller decisions
 
-As always, I researched the internet for related articles. If there is a good one, I don't want to steal or repeat the information in it. I will link to all of these blog posts, commenting on them and expanding on them as necessary. I hope this will mean for a lot of you to go down a lot of rabbit holes and read not only these six articles but much more.
+As always, I researched the internet for related articles. If there is a good one, I don't want to steal or repeat the information in it. I will link to all of these blog posts, commenting on them and expanding on them as necessary. I hope this will mean for a lot of you to go down a lot of rabbit holes and read not only these five articles but much more.
 
 ## Google recommendations
 
