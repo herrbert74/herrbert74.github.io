@@ -10,7 +10,7 @@ categories: android architecture
 Other parts in the series:<br>
 [Architecture related decisions in Android - Introduction]<br>
 Architecture related decisions in Android - Error handling and Monads (this article)<br>
-*Architecture related decisions in Android - Mapping* (coming soon)<br>
+[Architecture related decisions in Android - Mapping]<br>
 *Architecture related decisions in Android - Response and Reply classes* (coming soon)<br>
 *Architecture related decisions in Android - The rest* (coming soon)
 
@@ -153,7 +153,7 @@ This article discusses error handling and monads in Kotlin, focusing on their in
 In the next article, I will discuss mapping in the context of Android architecture.
 
 [Architecture related decisions in Android - Introduction]: https://herrbert74.github.io/posts/architecture-related-decisions-introduction/
-[Architecture related decisions in Android - Mapping]: http://localhost:4000/posts/architecture-related-decisions-mapping/
+[Architecture related decisions in Android - Mapping]: https://herrbert74.github.io/posts/architecture-related-decisions-mapping/
 [Architecture related decisions in Android - Response and Reply classes]: http://localhost:4000/posts/architecture-related-decisions-response-classes/
 [Architecture related decisions in Android - The rest]: http://localhost:4000/posts/architecture-related-decisions-rest/
 [elizarov-kotlin-exceptions]: https://elizarov.medium.com/kotlin-and-exceptions-8062f589d07
