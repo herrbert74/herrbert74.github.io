@@ -8,6 +8,10 @@ order: 8
 
 ## 2024
 
+### July
+* Releasing posts for Architecture related decisions in Android
+* Relearning GraphQL with PokedexGraphQL app
+
 ### June
 * Architecture related decisions in Android
 * Kotlin Coroutines book - Part 4 (Examples, Best practices)
