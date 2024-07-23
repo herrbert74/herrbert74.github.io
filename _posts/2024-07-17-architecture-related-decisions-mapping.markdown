@@ -8,6 +8,8 @@ mermaid: true
 
 ![starting-image](/assets/img/posts/20240717_architecture_mapping.jpg){: width="512" height="512" }
 
+<a href="https://androidweekly.net/issues/issue-632"><img alt="Featured in Android Weekly Issue 632" src="/assets/img/posts/20240717_badge.svg" width="252" height="20"></a>
+
 Other parts in the series:<br>
 [Architecture related decisions in Android - Introduction]<br>
 [Architecture related decisions in Android - Error handling and Monads]<br>

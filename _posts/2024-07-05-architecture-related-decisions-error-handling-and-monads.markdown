@@ -7,6 +7,8 @@ categories: android architecture
 
 ![starting-image](/assets/img/posts/20240604_error_handling.jpg){: width="512" height="512" }
 
+<a href="https://androidweekly.net/issues/issue-630"><img alt="Featured in Android Weekly Issue 630" src="/assets/img/posts/20240705_badge.svg" width="252" height="20"></a>
+
 Other parts in the series:<br>
 [Architecture related decisions in Android - Introduction]<br>
 Architecture related decisions in Android - Error handling and Monads (this article)<br>
