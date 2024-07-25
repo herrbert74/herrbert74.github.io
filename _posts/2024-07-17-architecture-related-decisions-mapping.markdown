@@ -162,8 +162,8 @@ fun CategoryDto.toCategory() = Category(
 
 And that's it. If you haven't started mapping yet, it's high time to do it. And if you have, but you have a different opinion, please let me know in the comments. Happy mapping!
 
-[Architecture related decisions in Android - Introduction]: http://localhost:4000/posts/architecture-related-decisions-introduction/
-[Architecture related decisions in Android - Error handling and Monads]: http://localhost:4000/posts/architecture-related-decisions-error-handling-and-monads/
+[Architecture related decisions in Android - Introduction]: https://herrbert74.github.io/posts/architecture-related-decisions-introduction/
+[Architecture related decisions in Android - Error handling and Monads]: https://herrbert74.github.io/posts/architecture-related-decisions-error-handling-and-monads/
 [Architecture related decisions in Android - Response and Reply classes]: http://localhost:4000/posts/architecture-related-decisions-response-classes/
 [Architecture related decisions in Android - The rest]: http://localhost:4000/posts/architecture-related-decisions-rest/
 [how-to-map-data-between-layers]: https://proandroiddev.com/app-architecture-how-to-map-data-between-layers-df0179c52f04
