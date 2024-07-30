@@ -10,14 +10,6 @@ mermaid: true
 
 <a href="https://androidweekly.net/issues/issue-624"><img alt="Featured in Android Weekly Issue 624" src="/assets/img/posts/20240521_badge.svg" width="252" height="20"></a>
 
-*Update 1: Added stale-if-error and update-while-navigate and corrected stale-while-revalidate*
-
-*Update 2: Added warning about runCatching*
-
-*Update 3: Added Cache First - Network Parallel strategy*
-
-*Update 4: Added a remark on handling multiple loading states with sealed classes*
-
 Recently, I came across a few challenges that involved caching. In everything I do, I strive to understand as much of it as possible. What type of caching is available? How should I decide on strategies? I found information on the technical part, but I couldn't find Android-related instructions. I also ran across a few interesting tidbits that I would like to share.
 
 ## Caching types
@@ -346,6 +338,15 @@ Please note that this solution uses cold flows and expects a single database sou
 
 That was a pleasureful journey for me, and I hope you enjoyed it as well, dear reader. I still have a lot to learn and then, hopefully, share. I might venture into ***in-memory caches*** or ***benchmarking*** the various strategies. But for now, I will move on to other things, as there are so many matters to explore in the Android world.
 
+### Updates
+
+*Update 1: Added stale-if-error and update-while-navigate and corrected stale-while-revalidate*
+
+*Update 2: Added warning about runCatching*
+
+*Update 3: Added Cache First - Network Parallel strategy*
+
+*Update 4: Added a remark on handling multiple loading states with sealed classes*
 
 [caching-strategies]: https://borstch.com/blog/caching-strategies-in-pwa-cache-first-network-first-stale-while-revalidate-etc
 [mastering-caching-strategies]: https://thinhdanggroup.github.io/caching-stategies/
@@ -353,5 +354,5 @@ That was a pleasureful journey for me, and I hope you enjoyed it as well, dear r
 [rfc5861]: https://datatracker.ietf.org/doc/html/rfc5861
 [networkBoundResource]: https://blog.devgenius.io/android-networking-and-database-caching-in-2020-mvvm-retrofit-room-flow-35b4f897d46a
 [kotlin result]: https://github.com/michaelbull/kotlin-result
-[getresult]: https://github.com/herrbert74/FlickSlate/tree/main/app/src/main/java/com/zsoltbertalan/flickslate/util/getresult
-[getresult-test]: https://github.com/herrbert74/FlickSlate/tree/main/app/src/test/java/com/zsoltbertalan/flickslate/util/getresult
+[getresult]: https://github.com/herrbert74/FlickSlate/tree/main/app/src/main/java/com/zsoltbertalan/flickslate/data/repository/getresult
+[getresult-test]: https://github.com/herrbert74/FlickSlate/tree/main/app/src/test/java/com/zsoltbertalan/flickslate/data/repository/getresult
