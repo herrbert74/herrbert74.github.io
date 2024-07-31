@@ -14,7 +14,7 @@ Other parts in the series:<br>
 [Architecture related decisions in Android - Introduction]<br>
 [Architecture related decisions in Android - Error handling and Monads]<br>
 Architecture related decisions in Android - Mapping (this article)<br>
-*Architecture related decisions in Android - Response and Reply classes* (coming soon)<br>
+[Architecture related decisions in Android - Response and Reply classes]<br>
 *Architecture related decisions in Android - The rest* (coming soon)
 
 ## Why map? Cannot we just use the same model everywhere?
