@@ -103,5 +103,5 @@ A word of warning when you choose an architecture for interview take-home test c
 [use-cases]: https://medium.com/@VolodymyrSch/the-complexities-of-clean-architecture-use-cases-71ac89ea8b40
 [Architecture related decisions in Android - Error handling and Monads]: https://herrbert74.github.io/posts/architecture-related-decisions-error-handling-and-monads/
 [Architecture related decisions in Android - Mapping]: https://herrbert74.github.io/posts/architecture-related-decisions-mapping/
-[Architecture related decisions in Android - Response and Reply classes]: http://localhost:4000/posts/architecture-related-decisions-response-classes/
+[Architecture related decisions in Android - Response and Reply classes]: https://herrbert74.github.io/posts/architecture-related-decisions-response-classes/
 [Architecture related decisions in Android - The rest]: http://localhost:4000/posts/architecture-related-decisions-rest/
