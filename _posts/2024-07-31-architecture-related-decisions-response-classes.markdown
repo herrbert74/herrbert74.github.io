@@ -24,7 +24,9 @@ I use the term **Reply** to make a distinction from Response. They are also wrap
 
 ## Response
 
-**Response** classes come from Retrofit. They represent a HTTP response. You can have access to the header with metadata, the body, and the error objects through it.
+**Response** classes come from libraries like Retrofit and Ktor. My examples will use Retrofit, but it applies similarly to Ktor, and probably other network layer libraries as well. 
+
+They represent a HTTP response. You can have access to the header with metadata, the body, and the error objects through it.
 
 Response class usage is limited to the data layer. I only include them in this article, because they infuence the naming of other similar classes.
 
