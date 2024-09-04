@@ -15,7 +15,7 @@ Other parts in the series:<br>
 [Architecture related decisions in Android - Error handling and Monads]<br>
 Architecture related decisions in Android - Mapping (this article)<br>
 [Architecture related decisions in Android - Response and Reply classes]<br>
-*Architecture related decisions in Android - The rest* (coming soon)
+[Architecture related decisions in Android - The rest]<br>
 
 ## Why map? Cannot we just use the same model everywhere?
 
@@ -165,7 +165,7 @@ And that's it. If you haven't started mapping yet, it's high time to do it. And 
 [Architecture related decisions in Android - Introduction]: https://herrbert74.github.io/posts/architecture-related-decisions-introduction/
 [Architecture related decisions in Android - Error handling and Monads]: https://herrbert74.github.io/posts/architecture-related-decisions-error-handling-and-monads/
 [Architecture related decisions in Android - Response and Reply classes]: https://herrbert74.github.io/posts/architecture-related-decisions-response-classes/
-[Architecture related decisions in Android - The rest]: http://localhost:4000/posts/architecture-related-decisions-rest/
+[Architecture related decisions in Android - The rest]: https://herrbert74.github.io/posts/architecture-related-decisions-rest/
 [how-to-map-data-between-layers]: https://proandroiddev.com/app-architecture-how-to-map-data-between-layers-df0179c52f04
 [do-you-even-map-though]: https://buffer.com/resources/even-map-though-data-model-mapping-android-apps/
 [modeling-retrofit-responses-with-sealed-classes-and-coroutines]: https://proandroiddev.com/modeling-retrofit-responses-with-sealed-classes-and-coroutines-9d6302077dfe
