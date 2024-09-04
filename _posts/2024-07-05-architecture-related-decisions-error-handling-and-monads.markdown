@@ -14,8 +14,7 @@ Other parts in the series:<br>
 Architecture related decisions in Android - Error handling and Monads (this article)<br>
 [Architecture related decisions in Android - Mapping]<br>
 [Architecture related decisions in Android - Response and Reply classes]<br>
-*Architecture related decisions in Android - The rest* (coming soon)
-
+[Architecture related decisions in Android - The rest]<br>
 
 I wrote this article as two separate articles, but it proved impossible to talk about error handling or monads without the other. For me, the two concepts are intertwined. So I will introduce both, tell you how they affect your decisions in the app stack, and finally, how I am thinking about them at the moment.
 
@@ -157,7 +156,7 @@ In the next article, I will discuss mapping in the context of Android architectu
 [Architecture related decisions in Android - Introduction]: https://herrbert74.github.io/posts/architecture-related-decisions-introduction/
 [Architecture related decisions in Android - Mapping]: https://herrbert74.github.io/posts/architecture-related-decisions-mapping/
 [Architecture related decisions in Android - Response and Reply classes]: https://herrbert74.github.io/posts/architecture-related-decisions-response-classes/
-[Architecture related decisions in Android - The rest]: http://localhost:4000/posts/architecture-related-decisions-rest/
+[Architecture related decisions in Android - The rest]: https://herrbert74.github.io/posts/architecture-related-decisions-rest/
 [elizarov-kotlin-exceptions]: https://elizarov.medium.com/kotlin-and-exceptions-8062f589d07
 [kotlin-result-standard-keep]: https://github.com/Kotlin/KEEP/blob/master/proposals/stdlib/result.md
 [typed-error-handling]: https://betterprogramming.pub/typed-error-handling-in-kotlin-11ff25882880

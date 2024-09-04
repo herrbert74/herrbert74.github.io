@@ -12,7 +12,7 @@ Architecture related decisions in Android - Introduction (this article)<br>
 [Architecture related decisions in Android - Error handling and Monads]<br>
 [Architecture related decisions in Android - Mapping]<br>
 [Architecture related decisions in Android - Response and Reply classes]<br>
-*Architecture related decisions in Android - The rest* (coming soon)
+[Architecture related decisions in Android - The rest]<br>
 
 ## What is architecture?
 
@@ -104,4 +104,4 @@ A word of warning when you choose an architecture for interview take-home test c
 [Architecture related decisions in Android - Error handling and Monads]: https://herrbert74.github.io/posts/architecture-related-decisions-error-handling-and-monads/
 [Architecture related decisions in Android - Mapping]: https://herrbert74.github.io/posts/architecture-related-decisions-mapping/
 [Architecture related decisions in Android - Response and Reply classes]: https://herrbert74.github.io/posts/architecture-related-decisions-response-classes/
-[Architecture related decisions in Android - The rest]: http://localhost:4000/posts/architecture-related-decisions-rest/
+[Architecture related decisions in Android - The rest]: https://herrbert74.github.io/posts/architecture-related-decisions-rest/

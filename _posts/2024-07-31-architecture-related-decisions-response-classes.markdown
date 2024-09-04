@@ -14,7 +14,7 @@ Other parts in the series:<br>
 [Architecture related decisions in Android - Error handling and Monads]<br>
 [Architecture related decisions in Android - Mapping]<br>
 Architecture related decisions in Android - Response and Reply classes (this article)<br>
-*Architecture related decisions in Android - The rest* (coming soon)
+[Architecture related decisions in Android - The rest]<br>
 
 ## Response vs. Reply
 
@@ -218,6 +218,6 @@ We learned about the differences between Response and Reply classes. I'm curious
 [Architecture related decisions in Android - Introduction]: https://herrbert74.github.io/posts/architecture-related-decisions-introduction/
 [Architecture related decisions in Android - Error handling and Monads]: https://herrbert74.github.io/posts/architecture-related-decisions-error-handling-and-monads/
 [Architecture related decisions in Android - Mapping]: https://herrbert74.github.io/posts/architecture-related-decisions-mapping/
-[Architecture related decisions in Android - The rest]: http://localhost:4000/posts/architecture-related-decisions-rest/
+[Architecture related decisions in Android - The rest]: https://herrbert74.github.io/posts/architecture-related-decisions-rest/
 [FlickSlate-GenreAccessor]: https://github.com/herrbert74/FlickSlate/blob/main/app/src/main/java/com/zsoltbertalan/flickslate/data/repository/GenreAccessor.kt
 [Caching-Strategies]: https://herrbert74.github.io/posts/caching-strategies-in-android/
