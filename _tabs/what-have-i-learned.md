@@ -8,6 +8,11 @@ order: 8
 
 ## 2024
 
+### August
+
+* Custom paging and caching with Realm
+* Setting up Github Actions with secrets and testing
+
 ### July
 * Releasing posts for Architecture related decisions in Android
 * Relearning GraphQL with PokedexGraphQL app
