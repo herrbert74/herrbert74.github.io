@@ -8,6 +8,19 @@ order: 8
 
 ## 2024
 
+### December
+
+* Dependency updates on Github with Renovate
+* Android data architecture
+
+### September, October, November
+
+* Rebase and squash advantages over merging PRs
+* Snapshot testing
+* Server Driven UI
+* Feature flags
+* Test fixture Gradle modules
+
 ### August
 
 * Custom paging and caching with Realm
