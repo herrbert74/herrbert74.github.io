@@ -7,6 +7,8 @@ categories: android architecture
 
 ![starting-image](/assets/img/posts/20240627_architecture.jpg){: width="512" height="512" }
 
+Architecture is the way various components on different layers of an application relate to each other. It could be high-level, such as UI, model, and data relations, but it can be more focused, like MVP, MVVM, and MVI architectures in the presentation layer.
+
 Other parts in the series:<br>
 Architecture related decisions in Android - Introduction (this article)<br>
 [Architecture related decisions in Android - Error handling and Monads]<br>
@@ -15,8 +17,6 @@ Architecture related decisions in Android - Introduction (this article)<br>
 [Architecture related decisions in Android - The rest]<br>
 
 ## What is architecture?
-
-Architecture is the way various components on different layers of an application relate to each other. It could be high-level, such as UI, model, and data relations, but it can be more focused, like MVP, MVVM, and MVI architectures in the presentation layer.
 
 When talking about architecture, a lot of Android developers use MV* architecture interchangeably with app architecture, which are two largely different things. While researching for this article, I ran into a few articles where the author could not even understand this distinction.
 

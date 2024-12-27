@@ -10,6 +10,8 @@ mermaid: true
 
 <a href="https://androidweekly.net/issues/issue-632"><img alt="Featured in Android Weekly Issue 632" src="/assets/img/posts/20240717_badge.svg" width="252" height="20"></a>
 
+You can get away with avoiding mapping for a long time. But once you realise how much better off you are, there is no way back. For me, that moment came a few years ago, when I was forced to use GraphQL at work. This made it necessary to create a separate network and domain/presentation model.
+
 Other parts in the series:<br>
 [Architecture related decisions in Android - Introduction]<br>
 [Architecture related decisions in Android - Error handling and Monads]<br>
@@ -20,8 +22,6 @@ Architecture related decisions in Android - Mapping (this article)<br>
 ## Why map? Cannot we just use the same model everywhere?
 
 In order to separate concerns between the layers of your architecture, you will need to have separate **models** for each layer. Your **network** model will contain nonidiomatic naming, unwanted fields, renaming annotations, and malformed data. Your **database** model might use annotations that you don't plan to use in your UI, and so on. And mapping is the place to create the perfect boundaries between your layers.
-
-You can get away with it for a long time. But once you realise how much you are better off, there is no way back. For me, that moment came a few years ago, when I was forced to use GraphQL at work. This made it necessary to create a separate network and domain/presentation model.
 
 There is just no better explanation on this topic than [this][do-you-even-map-though] article, which was written at a time when we all started to feel the need for something like this.
 
