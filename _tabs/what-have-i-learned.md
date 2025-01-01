@@ -6,6 +6,13 @@ icon: fas fa-leaf
 order: 8
 ---
 
+## 2025
+
+### January
+
+* https://developer.android.com/codelabs/jetpack-compose-testing#0
+* https://developer.android.com/codelabs/jetpack-compose-performance#0
+
 ## 2024
 
 ### December
