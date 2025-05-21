@@ -53,7 +53,7 @@ Add a new data class for the colours you want to use:
 ```kotlin
 
     @Immutable
-    data class AdditionalColorsPalette(
+    data class AdditionalColorScheme(
 
         val quaternaryContainer: Color = Color.Unspecified,
         val quinaryContainer: Color = Color.Unspecified,
@@ -101,7 +101,7 @@ Create a CompositionLocal key that can be provided using CompositionLocalProvide
 
 ```kotlin
 
-    val LocalAdditionalColorsPalette = staticCompositionLocalOf { AdditionalColorsPalette() }
+    val LocalAdditionalColors = staticCompositionLocalOf { AdditionalColorScheme() }
 
 ```
 {: file='design/Color.kt'}
@@ -117,11 +117,11 @@ Bind the key in your theme in Theme.kt to the actual values:
         content: @Composable () -> Unit,
     ) {
         val colorCache = remember { colorScheme }
-        val customColorCache = remember { additionalColorScheme }
+        val additionalColorCache = remember { additionalColorScheme }
 
         CompositionLocalProvider(
             LocalAppColors provides colorCache,
-            LocalAdditionalColors provides customColorCache,
+            LocalAdditionalColors provides additionalColorCache,
             content = content
         )
     }
@@ -137,7 +137,7 @@ Bind the key in your theme in Theme.kt to the actual values:
 
         ...
 
-        ProvideColors(colorScheme = colorScheme, additionalColorsPalette = customColorsPalette) {
+        ProvideColors(colorScheme = colorScheme, additionalColorScheme = additionalColorScheme) {
             MaterialTheme(
                 colorScheme = colorScheme,
                 typography = FlickSlateTypography,
@@ -213,12 +213,12 @@ And finally, we add them to the previously declared ProvideColors composable:
         content: @Composable () -> Unit,
     ) {
         val colorCache = remember { colorScheme }
-        val customColorCache = remember { additionalColorScheme }
+        val additionalColorCache = remember { additionalColorScheme }
         val fixedColorCache = remember { fixedAccentColorScheme }
 
         CompositionLocalProvider(
             LocalAppColors provides colorCache,
-            LocalAdditionalColors provides customColorCache,
+            LocalAdditionalColors provides additionalColorCache,
             LocalFixedColors provides fixedColorCache,
             content = content
         )
