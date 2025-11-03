@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "You are using Entry Points Wrong"
+title:  "You are using Entry Points wrong"
 date:   2025-11-03 19:50:00 +0000
 categories: android dagger hilt dependency_injection
 mermaid: false
