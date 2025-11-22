@@ -8,10 +8,42 @@ order: 8
 
 ## 2025
 
+### November
+
+* Prompting AI to add new features or resolve problems with Gemini and Github Copilot
+
+### October
+
+* [How to use Dagger EntryPoints properly][you-are-using-entrypoints-wrong]
+
+### September
+
+* [Make everything internal][make-everything-internal]
+* Gradle plugins (see Lines of Code and Gradle-profiler plugins in FlickSlate)
+
+### August
+
+* [Super layers and feature groups][architectural-evolution]
+
+### July
+
+* How to add detekt to a single task, detekt type resolution
+* How to create typesafe convention plugins (with another plugin of course)
+
+### April, May, June
+
+* Screenshot testing with comopose-screenshots
+* Dealing with failing tests on Github Actions due to emulator caching
+
+### February, March
+
+* How to make as small PRs as possible
+* New Relic query language
+
 ### January
 
-* https://developer.android.com/codelabs/jetpack-compose-testing#0
-* https://developer.android.com/codelabs/jetpack-compose-performance#0
+* [https://developer.android.com/codelabs/jetpack-compose-testing#0][compose-testing]
+* [https://developer.android.com/codelabs/jetpack-compose-performance#0][compose-performance]
 
 ## 2024
 
@@ -48,7 +80,7 @@ order: 8
 
 ### April
 * Switching back to MVVM for test challenges
-* MAterial 3 Compose design system
+* Material 3 Compose design system
 
 ### March
 * HackerRank easy challenges
@@ -316,3 +348,8 @@ How to use typealias for deferred actions
 [coroutines]: https://leanpub.com/coroutines
 [gradle-profiler]: https://github.com/gradle/gradle-profiler
 [caching-types]: https://proandroiddev.com/caching-in-the-android-build-process-a52641a66b31
+[compose-testing]: https://developer.android.com/codelabs/jetpack-compose-testing#0
+[compose-performance]: https://developer.android.com/codelabs/jetpack-compose-performance#0
+[architectural-evolution]: https://herrbert74.github.io/posts/architectural-evolution-of-an-app/
+[make-everything-internal]: https://herrbert74.github.io/posts/make-everything-internal/
+[you-are-using-entrypoints-wrong]: https://herrbert74.github.io/posts/you-are-using-entry-points-wrong/
