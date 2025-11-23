@@ -15,7 +15,6 @@ order: 6
 * Bitbucket: [https://bitbucket.org/babestudios/workspace/repositories/][Bitbucket]
 * StackOverflow: [https://stackoverflow.com/users/1067763/herrbert74][StackOverflow]
 * LinkedIn: [https://www.linkedin.com/pub/zsolt-bertalan/4a/b1/b11][LinkedIn]
-* Google Play: [https://play.google.com/store/apps/developer?id=BaBe+Studios][Google Play]
 
 ## Summary
 
@@ -30,6 +29,29 @@ Tech used recently: Kotlin, MVI, MVVM, Coroutines, SOLID, Dagger/Hilt, RetroFit,
 <br>
 ## Experience
 
+![asos](/assets/img/resume/asos.png){: width="167" height="62" .left }
+### Asos, London
+#### Senior Android developer, from January 2025
+
+* Working in the core team focusing on updating a legacy app.
+<br>
+<br>
+
+![deliveroo](/assets/img/resume/deliveroo.png){: width="178" height="100" .left }
+<br>
+
+### Deliveroo, London
+<br>
+#### Senior Android developer, September 2024 – December 2024
+
+* Assigned to the product team with a focus on non-Android server driven UI.
+* Updated Detekt that had some broken rules for three years.
+* Temporarily filled in for the Payments team contributing to releases, adding 3DS challenges, and enhancing integration with Stripe SDK and Bancontact.
+* Thrived in a fast-paced, user- and product-orientated environment but opted out due to mismatched preferences.
+
+<br>
+<br>
+
 ![daily-mirror](/assets/img/resume/daily-mirror.png){: width="167" height="62" .left }
 ### Reach plc, London
 #### Senior Android developer, February 2021 – January 2024
@@ -43,6 +65,8 @@ Tech used recently: Kotlin, MVI, MVVM, Coroutines, SOLID, Dagger/Hilt, RetroFit,
 * Executed modularisation, and build process improvements, which resulted in 60% build time reduction, allowing us to stay on a cheaper CI tier, despite growth.
 * Introduced many useful tools, such as Detekt, Gradle Version Catalog, plus many other Java tools and libraries replaced with Kotlin equivalents, which led to velocity improvements of 20-30%.
 * The Extra Mile™: cleaned up the code regularly. The code went up from 80k Lines Of Code to 100k LOC during my tenure, but my estimate is that it would have been around 180k without my work, making it significantly more expensive to maintain.
+<br>
+<br>
 
 ![mkodo](/assets/img/resume/mkodo.png){: width="160" .left }
 ### Mkodo, London
@@ -53,7 +77,8 @@ Tech used recently: Kotlin, MVI, MVVM, Coroutines, SOLID, Dagger/Hilt, RetroFit,
 * Many-many bug fixing with close to zero crash rates.
 * Wrote Unit tests, maintained close to 100% coverage for business logic.
 * Reviewed the app from an architectural and broader code quality point of view.
-
+<br>
+<br>
 
 ![openpayd](/assets/img/resume/openpayd.png){: width="250" .left}
 ### OpenPayd, London
@@ -63,16 +88,20 @@ Tech used recently: Kotlin, MVI, MVVM, Coroutines, SOLID, Dagger/Hilt, RetroFit,
 * Migrated the app from Rest calls to GraphQL.
 * Improved code quality, replaced legacy code with idiomatic Kotlin code, instituted Detekt, modularisation, Navigation Components, ViewModels, and MVI.
 * Wrote the first Unit and Espresso tests for the app.
+<br>
+<br>
 
 ![medshr](/assets/img/resume/medshr.png){: width="60" .left }
 ### MedShr Ltd., London
+<br>
 #### Android developer, March 2017 – June 2019
 
 * Social network app for health professionals to share and discuss cases. App: [https://play.google.com/store/apps/details?id=net.medshr.android][MedShr]
 * Developed new features to documentation in a startup environment, while raising the standards of a legacy application at the same time.
 * Overhauled legacy codebase by refactoring 80,000 lines of inefficient code to idiomatic Kotlin, resulting in a 40% reduction in app crashes. Migrated the app from Retrofit 1 to Retrofit 2/RxJava, simplified navigation, and set up MVP architecture to make the app testable.
 * Other technologies used: RxJava, Retrofit, Dagger, PubNub, Google Auth, Crashlytics, Google Maps API, Google Analytics, Firebase Messaging.
-
+<br>
+<br>
 
 ![iedigital](/assets/img/resume/iedigital.png){: width="180" .left }
 ### Intelligent Environments (ieDigital), Kingston upon Thames
@@ -89,9 +118,12 @@ Tech used recently: Kotlin, MVI, MVVM, Coroutines, SOLID, Dagger/Hilt, RetroFit,
     * I was the sole developer for the first deployments of the company on Google Store for clients like CapitalOne, ING and Swisscard, where I liaised with QA, Business Analysts, and Project Managers to ensure customer satisfaction.
     * Customised our mobile financial services platform according to specifications. This includes mainly changing colours and copy text, but also adding new features like Apply for Thinkmoney.
     * Worked on an Android middleware for Atom Bank.
+<br>
+<br>
 
 ![szintezis-net](/assets/img/resume/szintezis-net.png){: width="70" .left }
 ### Synthesis-NET LLC, Győr, Hungary
+<br>
 #### Android developer, November 2011 - April 2013
 
 * Learned the basics of Android programming, planned and executed detailed projects based on my own ideas, and was involved in the full product life cycle from design and development to deployment as the sole Android developer on each project.
